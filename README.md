@@ -1,9 +1,9 @@
 # Garbage Classification with Transfer Learning
 
-![Python](https://img.shields.io/badge/python-3.10-blue)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-2.15-orange)
-![Keras](https://img.shields.io/badge/Keras-2.15-red)
-![License](https://img.shields.io/badge/license-MIT-green)
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.15-FF6F00?logo=tensorflow&logoColor=white)
+![Keras](https://img.shields.io/badge/Keras-2.15-D00000?logo=keras&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-2EA44F?logo=open-source-initiative&logoColor=white)
 
 ---
 
