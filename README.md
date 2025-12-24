@@ -245,7 +245,7 @@ All plots are embedded below for direct inspection. Original high-resolution fil
 > Transfer learning models outperform the baseline CNN, showing that pretrained features are highly effective for garbage classification.
 
 **Example Confusion Matrix (EfficientNetB0)**
-![Confusion Matrix](confusion_matrix_heatmap_efficientnet.png)  
+![Confusion Matrix](results/confusion_matrix_heatmap_efficientnet.png)  
 
 ### Qualitative Insights
 
