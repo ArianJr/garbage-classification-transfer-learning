@@ -1,35 +1,109 @@
 # Garbage Classification with Transfer Learning
 
+![Python](https://img.shields.io/badge/python-3.10-blue)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.15-orange)
+![Keras](https://img.shields.io/badge/Keras-2.15-red)
+![License](https://img.shields.io/badge/license-MIT-green)
+
 ---
 
 ## Overview
 
-This project delivers a **comprehensive and visually grounded evaluation** of deep learning approaches for **image-based garbage classification**. The study compares a baseline convolutional neural network trained from scratch against multiple **state-of-the-art transfer learning architectures**, all evaluated under identical experimental conditions.
+This project presents a comprehensive evaluation of deep learning models for image-based garbage classification. It compares a baseline convolutional neural network (CNN) trained from scratch with several state-of-the-art transfer learning architectures, all evaluated under consistent experimental conditions.
 
-All experiments, visualizations, and analyses are contained **directly within the notebook**, ensuring transparency, reproducibility, and clarity.
+All experiments, visualizations, and analyses are contained within a single notebook to ensure transparency, reproducibility, and clarity.
+
+---
+
+## Motivation
+
+Automatic garbage classification plays a vital role in **modern waste management and sustainability initiatives**. Manual sorting of waste is labor‑intensive, inconsistent, and difficult to scale, especially in recycling facilities and smart city infrastructure. By leveraging deep learning and transfer learning techniques, this project aims to **automate the identification of common garbage types from images**, enabling more efficient recycling processes, reduced operational cost, and improved environmental outcomes.
+
+This project benchmarks a **baseline CNN** against state-of-the-art **pretrained architectures** including **ResNet50, MobileNetV2, and EfficientNetB0** to provide insights into the **accuracy–efficiency trade-offs** critical for both research and real-world deployment of image-based waste sorting systems.  
+
+*Repository:* [GitHub – Garbage Classification Transfer Learning](https://github.com/ArianJr/grabage-classification-transfer-learning)
+
+---
+
+## Dataset
+
+This project uses the **Garbage Classification V2 dataset** from Kaggle, designed for machine learning research in waste classification. The dataset contains photographic images of everyday waste items labeled across **10 categories**:
+
+- Metal  
+- Glass  
+- Biological  
+- Paper  
+- Battery  
+- Trash  
+- Cardboard  
+- Shoes  
+- Clothes  
+- Plastic  
+
+Original dataset: [Kaggle – Garbage Classification V2](https://www.kaggle.com/datasets/sumn2u/garbage-classification-v2)
+
+To support experimentation with limited data, this repository uses a **reduced experimental subset**:
+
+| Split         | Images | Notes                          |
+|---------------|--------|--------------------------------|
+| Training      | 100    | 10 images per class            |
+| Validation    | 20     | 2 images per class             |
+| Test          | 10     | 1 image per class              |
+
+This intentionally small subset highlights **transfer learning’s ability to generalize from minimal labeled data**, reflecting practical scenarios where large, balanced datasets are unavailable.  
+
+> Each split is included in the repository, allowing users to **reproduce experiments** and evaluate model performance consistently.
+
+---
+
+## Environment & Dependencies
+* Python 3.10+  
+* TensorFlow 2.x  
+* NumPy, Pandas, Matplotlib, Seaborn  
+* scikit-learn  
+* Jupyter Notebook / JupyterLab  
+
+> Installing via `pip install -r requirements.txt` recommended for reproducibility.
+
+---
+
+## Setup & Installation
+
+1. Clone the repository:
+```bash
+## Setup & Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/ArianJr/garbage-classification-transfer-learning.git
+cd garbage-classification-transfer-learning
+```
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+4. Launch the notebook:
+```bash
+jupyter notebook Garbage_Classification.ipynb
+```
 
 ---
 
 ## Model Architectures
 
 ### CNN from Scratch
-
 Baseline convolutional neural network trained without pretrained weights. This model establishes a lower-bound reference for performance and learning behavior.
 
 ### ResNet50 (Transfer Learning)
-
 Deep residual network pretrained on ImageNet, used as a feature extractor to leverage rich hierarchical representations.
 
 ### MobileNetV2 (Transfer Learning)
-
 Lightweight architecture optimized for efficiency while maintaining strong predictive performance. Suitable for deployment-oriented scenarios.
 
 ### EfficientNetB0 (Transfer Learning)
-
 Modern architecture using compound scaling to balance depth, width, and resolution, achieving high accuracy with fewer parameters.
 
 ### Comparative Analysis
-
 All models are evaluated side by side to highlight architectural trade-offs and performance trends.
 
 ---
@@ -204,17 +278,6 @@ All plots are embedded below for direct inspection. Original high-resolution fil
 ├── notebook.ipynb   # Complete implementation, experiments, and visualizations
 ├── README.md       # Project overview and analytical summary
 ```
-
----
-
-## Environment & Dependencies
-* Python 3.10+  
-* TensorFlow 2.x  
-* NumPy, Pandas, Matplotlib, Seaborn  
-* scikit-learn  
-* Jupyter Notebook / JupyterLab  
-
-> Installing via `pip install -r requirements.txt` recommended for reproducibility.
 
 ---
 
