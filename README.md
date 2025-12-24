@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="results/garbage_classification_thumbnail.png" alt="Garbage Classification Thumbnail">
+</p>
+
 # Garbage Classification with Transfer Learning
 
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)
