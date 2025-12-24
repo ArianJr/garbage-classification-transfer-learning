@@ -39,7 +39,7 @@ All models are evaluated side by side to highlight architectural trade-offs and 
 | Component           | Description                                    |
 | ------------------- | ---------------------------------------------- |
 | Input Resolution    | Uniform resizing across all models             |
-| Loss Function       | Sparse Categorical Crossentropy                |
+| Loss Function       | Categorical Crossentropy                |
 | Optimizer           | Adam                                           |
 | Evaluation Metric   | Accuracy                                       |
 | Data Augmentation   | Random flips, rotations, zooms (training only) |
