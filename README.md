@@ -91,10 +91,10 @@ This level of analysis is essential for understanding real-world model behavior 
 
 | Model            | Accuracy | Relative Performance | Key Observations                                |
 |-----------------|----------|--------------------|-----------------------------------------------|
-| CNN from Scratch | 72.4%    | Lowest             | Limited generalization, slower convergence    |
-| ResNet50         | 91.3%    | High               | Stable training, strong feature extraction    |
-| MobileNetV2      | 92.1%    | Very High          | Optimal balance of accuracy and efficiency    |
-| EfficientNetB0   | 92.5%    | Very High          | Consistent accuracy with compact architecture |
+| CNN from Scratch | 43.3%    | Lowest             | Limited generalization, slower convergence    |
+| ResNet50         | 91.2%    | High               | Stable training, strong feature extraction    |
+| MobileNetV2      | 90.2%    | Very High          | Optimal balance of accuracy and efficiency    |
+| EfficientNetB0   | 92.2%    | Very High          | Consistent accuracy with compact architecture |
 
 > Exact numerical metrics are reported in the notebook to preserve experimental integrity.
 
