@@ -242,10 +242,7 @@ All plots are embedded below for direct inspection. Original high-resolution fil
 | EfficientNetB0   | 92.2%    | Very High          | Consistent accuracy with compact architecture |
 
 > Exact numerical metrics are reported in the notebook to preserve experimental integrity.
-> Transfer learning models outperform the baseline CNN, showing that pretrained features are highly effective for garbage classification.
-
-**Example Confusion Matrix (EfficientNetB0)**
-![Confusion Matrix](results/confusion_matrix_heatmap_efficientnet.png)  
+> Transfer learning models outperform the baseline CNN, showing that pretrained features are highly effective for garbage classification. 
 
 ### Qualitative Insights
 
