@@ -267,10 +267,18 @@ All plots are embedded below for direct inspection. Original high-resolution fil
 
 ## Project Structure
 
-```
-├── notebook.ipynb   # Complete implementation, experiments, and visualizations
-├── README.md       # Project overview and analytical summary
-```
+## Project Structure
+
+| Path / File | Description |
+|------------|-------------|
+| `dataset/` | Image dataset directory containing garbage classification images |
+| `models/` | Saved model architectures and trained model weights |
+| `results/` | Generated plots, figures, and evaluation outputs |
+| `.gitignore` | Specifies files and directories to be ignored by Git |
+| `LICENSE` | MIT License |
+| `README.md` | Project overview, documentation, and analysis summary |
+| `requirements.txt` | Python dependencies required to run the project |
+| `transfer_learning_garbage_classification.ipynb` | Complete implementation: training, evaluation, and visualization |
 
 ---
 
