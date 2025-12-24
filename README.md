@@ -49,6 +49,16 @@ This controlled setup ensures a fair and meaningful comparison across architectu
 
 ---
 
+## Usage
+
+- Run the notebook to reproduce training and evaluation.  
+- Visualizations include:
+  - Training/validation loss and accuracy curves  
+  - Confusion matrices for each model  
+  - Comparative performance charts  
+
+---
+
 ## Visual Evaluation
 
 ### Training and Validation Curves
@@ -158,6 +168,10 @@ All plots are embedded below for direct inspection. Original high-resolution fil
 | EfficientNetB0   | 92.2%    | Very High          | Consistent accuracy with compact architecture |
 
 > Exact numerical metrics are reported in the notebook to preserve experimental integrity.
+> Transfer learning models outperform the baseline CNN, showing that pretrained features are highly effective for garbage classification.
+
+**Example Confusion Matrix (EfficientNetB0)**
+![Confusion Matrix](confusion_matrix_heatmap_efficientnet.png)  
 
 ### Qualitative Insights
 
@@ -209,6 +223,12 @@ All plots are embedded below for direct inspection. Original high-resolution fil
 * All metrics and figures are generated directly within the notebook
 * Experiments progress sequentially from baseline to advanced models
 * Visual evidence is preserved to support all conclusions
+
+---
+
+## License
+
+This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.  
 
 ---
 
